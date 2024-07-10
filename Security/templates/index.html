@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<title>{% block title%} {% endblock %}</title>
+
+	{% block css %} {% endblock %}
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+				</li>
+
+				<li class="nav-item">
+				</li>
+
+				<li class="nav-item">
+				</li>
+
+				<li class="nav-item">
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'logout' %}">Logout </a>
+
+				</li>
+				<li class="nav-item">
+					<a class="nav-link"><b>Hello, {{request.user}}</b> </a>
+
+				</li>
+			</ul>
+
+
+
+
+
+		</div>
+	</nav>
+	{% block content %}
+	<main role="main">
+
+		<!-- Main jumbotron for a primary marketing message or call to action -->
+		<div class="jumbotron">
+			<div class="container">
+				<h1 class="display-3" style="color:rgb(32, 110, 227);">Welcome to KCT</h1>
+				<p>Welcome to the KCT Campus Security Management App, your trusted companion for ensuring safety and
+					security within our campus premises. With this innovative tool, we empower our community members to
+					contribute actively to a secure environment. Whether you're a student, faculty member, or staff, our
+					app is designed to provide you with real-time updates, emergency alerts, and seamless communication
+					channels. Together, let's foster a culture of vigilance and safety as we navigate through our
+					academic pursuits. Welcome aboard, and let's prioritize safety for all!
+					In addition to providing real-time updates and emergency alerts, the KCT Campus Security Management
+					App offers a comprehensive suite of features tailored to meet the unique needs of our campus
+					community. Easily report suspicious activities or incidents directly through the app, ensuring swift
+					response from our dedicated security team.
+				</p>
+				<!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p> -->
+			</div>
+		</div>
+
+		<div class="container">
+			<!-- Example row of columns -->
+			<div class="row">
+				<div class="col-md-4">
+					<h2>Vinit Kumar Choudhary</h2>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+						mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+						magna mollis euismod. Donec sed odio dui. </p>
+					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+				</div>
+				<div class="col-md-4">
+					<h2>Musaib Wani</h2>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+						mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+						magna mollis euismod. Donec sed odio dui. </p>
+					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+				</div>
+				<div class="col-md-4">
+					<h2>Dheeruu bhai</h2>
+					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
+						ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+						condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+				</div>
+			</div>
+
+			<hr>
+
+		</div> <!-- /container -->
+
+	</main>
+	{% endblock %}
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+		crossorigin="anonymous"></script>
+	{% block js %}
+
+	{% endblock %}
+</body>
+
+</html>
